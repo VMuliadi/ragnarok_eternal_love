@@ -10,11 +10,6 @@ import os
 requests.packages.urllib3.disable_warnings()
 # import pymongo
 
-MONGO_HOSTNAME = "localhost"
-MONGO_PORTNUMB = 27017
-MONGO_USERNAME = "ragnarok"
-MONGO_PASSWORD = "mo~91}#LSauN7(.l"
-
 base_url_for_item_list = 'https://www.roguard.net/db/items/'
 get_latest_page = int(
 	BeautifulSoup(requests.get(base_url_for_item_list, verify=False).text, 'html.parser')\
